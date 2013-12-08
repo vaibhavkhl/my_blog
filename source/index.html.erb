@@ -1,4 +1,5 @@
-<% blog.articles[0...15].each do |article| %>
+<% if not blog.articles.empty? %>
+<% blog.articles.each do |article| %>
 <article>
   <h1><a href="<%= article.url %>"><%= article.title %></a></h1>
   <small><%= article.date.strftime('%b %e %Y') %></small>
@@ -10,9 +11,5 @@
 
 <hr>
 
-<h2>Older Posts</h2>
 
-<% blog.articles[15..-1].each do |article| %>
-  <h3><a href="<%= article.url %>"><%= article.title %></a></h3>
-  <small><%= article.date.strftime('%b %e %Y') %></small>
-<% end %>
+<%end%>

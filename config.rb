@@ -83,10 +83,6 @@ configure :build do
   # Or use a different image path
   # set :http_path, "/Content/images/"
 
-  activate :asset_host
-  set :asset_host do |asset|
-    "http://cdn.eviltrout.com"
-  end
 
 end
 

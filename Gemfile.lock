@@ -103,6 +103,7 @@ GEM
 
 PLATFORMS
   ruby
+  x86-mingw32
 
 DEPENDENCIES
   builder (~> 3.0.0)
